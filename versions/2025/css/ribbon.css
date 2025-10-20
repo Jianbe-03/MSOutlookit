@@ -1,0 +1,45 @@
+/* Ribbon - Outlook style command bar */
+.ribbon {
+  height: 44px;
+  background: white;
+  border-bottom: 1px solid #edebe9;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  gap: 8px;
+}
+
+.ribbon-btn {
+  height: 32px;
+  padding: 0 12px;
+  border: none;
+  background: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #323130;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.ribbon-btn:hover {
+  background: #f3f2f1;
+}
+
+.ribbon-btn-primary {
+  background: #0078d4;
+  color: white;
+}
+
+.ribbon-btn-primary:hover {
+  background: #106ebe;
+}
+
+.ribbon-divider {
+  width: 1px;
+  height: 24px;
+  background: #edebe9;
+  margin: 0 4px;
+}

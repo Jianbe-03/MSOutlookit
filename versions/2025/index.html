@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Outlook - MSOutlookit</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  
+  <!-- Modular CSS Files -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/titlebar.css">
+  <link rel="stylesheet" href="css/ribbon.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/folders.css">
+  <link rel="stylesheet" href="css/messages.css">
+  <link rel="stylesheet" href="css/reading-pane.css">
+</head>
+<body>
+  <!-- Microsoft 365 Title Bar -->
+  <div class="titlebar">
+    <div class="titlebar-left">
+      <div class="titlebar-icon"></div>
+      <span class="titlebar-text">Outlook</span>
+    </div>
+    <div class="titlebar-search">
+      <input type="search" placeholder="Search">
+    </div>
+  </div>
+
+  <!-- Ribbon / Command Bar -->
+  <div class="ribbon">
+    <button class="ribbon-btn ribbon-btn-primary" onclick="spawnCommandWindow()">
+      <span>✉️</span> New Subreddit
+    </button>
+    <div class="ribbon-divider"></div>
+    <button class="ribbon-btn">🗑️ Delete</button>
+    <button class="ribbon-btn">📁 Archive</button>
+    <button class="ribbon-btn">🚫 Junk</button>
+    <div class="ribbon-divider"></div>
+    <button class="ribbon-btn">↩️ Reply</button>
+    <button class="ribbon-btn">↪️ Forward</button>
+  </div>
+
+  <!-- Main Layout -->
+  <div class="main-container">
+    <!-- Left Navigation -->
+    <div class="left-nav">
+      <div class="left-nav-header">
+        <div style="font-weight:600;font-size:16px;">Folders</div>
+      </div>
+      <div class="folder-list" id="folders">
+        <div class="folder-item inbox active" id="folder_FrontPage">Inbox</div>
+        <div class="folderholder"></div>
+      </div>
+    </div>
+
+    <!-- Message List -->
+    <div class="message-list-container">
+      <div class="message-list-header">
+        <div class="message-list-title">Inbox</div>
+        <div style="font-size:13px;color:#605e5c;">All</div>
+      </div>
+      <div class="message-list" id="previewarea">
+        <!-- Messages inserted by JS -->
+        <div class="message-item unread selected">
+          <div class="message-avatar">MS</div>
+          <div class="message-content">
+            <div class="message-header">
+              <div class="message-sender">Microsoft Outlook</div>
+              <div class="message-time">Now</div>
+            </div>
+            <div class="message-subject">Welcome to MSOutlookit 2025</div>
+            <div class="message-preview">The Reddit browser that looks exactly like Microsoft Outlook...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reading Pane -->
+    <div class="reading-pane">
+      <div class="reading-pane-header">
+        <div class="reading-pane-subject">Welcome to MSOutlookit 2025</div>
+        <div class="reading-pane-meta">
+          <div class="reading-pane-avatar">MS</div>
+          <div class="reading-pane-sender-info">
+            <div class="reading-pane-sender">Microsoft Outlook</div>
+            <div class="reading-pane-to">To: You</div>
+          </div>
+        </div>
+      </div>
+      <div class="reading-pane-body theemailbody">
+        <p>Welcome to <strong>MSOutlookit 2025</strong>!</p>
+        <p>This is a pixel-perfect replica of Microsoft Outlook that browses Reddit instead of email.</p>
+        <p><strong>How to use:</strong></p>
+        <ul>
+          <li>Click "New Subreddit" to add subreddits to your folders</li>
+          <li>Click any message to view its comments</li>
+          <li>Browse Reddit like you're checking your email at work!</li>
+        </ul>
+        <p style="margin-top:24px;color:#605e5c;font-size:13px;">
+          Want the classic experience? Check out the <a href="../2013/index.html" style="color:#0078d4;">2013 version</a> 
+          or <a href="../2004/index.html" style="color:#0078d4;">2004 version</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery and UI Libraries -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+  <script src="ui/jquery.ui.core.min.js"></script>
+  <script src="ui/jquery.ui.widget.min.js"></script>
+  <script src="ui/jquery.ui.mouse.min.js"></script>
+  <script src="ui/jquery.ui.draggable.min.js"></script>
+  <script src="ui/jquery.ui.resizable.min.js"></script>
+  
+  <!-- Modular JavaScript Files (order matters!) -->
+  <script src="js/config.js"></script>
+  <script src="js/windows.js"></script>
+  <script src="js/folders.js"></script>
+  <script src="js/stories.js"></script>
+  <script src="js/comments.js"></script>
+  <script src="js/media.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/init.js"></script>
+</body>
+</html>

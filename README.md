@@ -6,6 +6,14 @@ MSOutlookit was my second Javascript project -- it essentially reskins the homep
 
 It serves the silly (and not-so-honorable) purpose of disguising reddit browsing during work.
 
+## Versions
+
+This project now includes multiple versions of the Outlook interface:
+
+- **Outlook 2025** (`versions/2025/`): The latest version with modern styling
+- **Outlook 2013** (`versions/2013/`): Updated UI to match Outlook 2013
+- **Outlook 2004** (`versions/2004/`): The classic original version
+
 ## Video
 
 A demo on how to use MSOutlookit can be seen [here](http://www.youtube.com/watch?v=rGVhlxxu6oc) . At the time of filming, the full functionality was in place (logging in, Lynx text dumps, etc). Due to server constraints I've stripped out MSOutlookit to bare-bones Reddit API display.

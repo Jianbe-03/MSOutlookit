@@ -1,0 +1,55 @@
+/* Left Navigation - Folders */
+.left-nav {
+  width: 260px;
+  background: white;
+  border-right: 1px solid #edebe9;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-nav-header {
+  padding: 16px;
+  border-bottom: 1px solid #edebe9;
+}
+
+.folder-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px 0;
+}
+
+.folder-item {
+  height: 36px;
+  padding: 0 16px 0 36px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  color: #323130;
+  position: relative;
+}
+
+.folder-item:hover {
+  background: #f3f2f1;
+}
+
+.folder-item.active {
+  background: #e1dfdd;
+  font-weight: 600;
+}
+
+.folder-item::before {
+  content: "📁";
+  position: absolute;
+  left: 12px;
+  font-size: 16px;
+}
+
+.folder-item.inbox::before { 
+  content: "📥"; 
+}
+
+/* Legacy hooks for JS */
+.folderholder { 
+  display: none; 
+}

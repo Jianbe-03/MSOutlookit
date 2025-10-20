@@ -1,0 +1,6 @@
+/* Main Layout */
+.main-container {
+  display: flex;
+  height: calc(100vh - 92px);
+  background: #faf9f8;
+}
